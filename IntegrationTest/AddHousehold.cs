@@ -19,10 +19,10 @@ namespace IntegrationTest
         public async Task AddHouseHold()
         {
             var client = new RestClient("http://localhost:3000/households/");
-            var request = new RestRequest(Method.GET);
+            var request = new RestRequest(Method.POST);
             request.AddHeader("cache-control", "no-cache");
             request.AddHeader("Connection", "keep-alive");
-            request.AddHeader("Content-Length", "23");
+            //request.AddHeader("Content-Length", "23");
             request.AddHeader("Accept-Encoding", "gzip, deflate");
             request.AddHeader("Host", "localhost:3000");
             request.AddHeader("Postman-Token", "b9f0b977-7ddd-4a61-bb5c-6030d2a0f0d5,9118e2be-2ed0-466c-a2ee-9a19a200e77f");
