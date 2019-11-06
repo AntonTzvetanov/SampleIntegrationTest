@@ -6,7 +6,7 @@ using System;
 using System.Globalization;
 using System.Threading.Tasks;
 
-namespace IntegrationTest
+namespace IntegrationTest.Models
 {
     public class Tests
     {
