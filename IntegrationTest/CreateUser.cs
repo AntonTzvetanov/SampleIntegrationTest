@@ -86,12 +86,12 @@ namespace IntegrationTest
 
     public partial class AddUser
     {
-        public static SomeTest FromJson(string json) => JsonConvert.DeserializeObject<SomeTest>(json, QuickType.Converter.Settings);
+        public static SomeTest FromJson(string json) => JsonConvert.DeserializeObject<SomeTest>(json, Converter.Settings);
     }
 
     public static class AddUser1
     {
-        public static string ToJson(this SomeTest self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this SomeTest self) => JsonConvert.SerializeObject(self,Converter.Settings);
     }
 
     internal static class ConverterjSON
