@@ -1,3 +1,4 @@
+using IntegrationTest.Models.Households;
 using NUnit.Framework;
 using System;
 using System.Net.Http;

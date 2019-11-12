@@ -1,6 +1,6 @@
 ﻿
 
-namespace IntegrationTest.Models
+namespace IntegrationTest.Models.Households
 {
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
@@ -25,7 +25,7 @@ namespace IntegrationTest.Models
         public Link[] Links { get; set; }
     }
 
-    public partial class Link
+    public class Link
     {
         [JsonProperty("rel")]
         public string Rel { get; set; }
